@@ -8,8 +8,17 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>Etch-a-Sketch</header>
+    <div class="options">
+    <label for="numberInput">Choose Grid size</label>
+    <input type="number" id="numberInput" min="1" max="18">
+    <button class="size">Resize Canvas</button>
+    <label for="colorPicker">Choose a color:</label>
+    <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+    <button class="eraser">Use Eraser</button>
+    <button class="clear">Clear</button>
+    </div>
     <div class="maindiv">
+    <header>Etch-a-Sketch</header>
     <div class="canvasdiv"></div>
     </div>
 </body>

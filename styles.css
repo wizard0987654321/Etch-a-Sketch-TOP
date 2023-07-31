@@ -4,7 +4,6 @@
 body {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 225, 225);
@@ -22,7 +21,6 @@ header {
     justify-items: center;
     align-items: center;
     align-content: center;
-    grid-template-columns: repeat(16, 20px);
     background-color: rgb(39, 37, 37);
     padding: 20px;
 }
@@ -30,9 +28,38 @@ header {
 .square {
     width: 20px;
     height: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
     border: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+input {
+    margin: 2rem;
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    font-family: 'Almendra', serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    margin-bottom: 2rem;
+    font-family: 'Almendra', serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
